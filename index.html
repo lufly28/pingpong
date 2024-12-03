@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      h1, p {
+          align-items: center;
+          justify-content: center;
+          display: flex;
+        overflow: hidden;
+        /* Oculta el texto que excede el ancho */
+        border-right: .15em solid #000;
+        /* Crea una línea vertical al final del texto */
+        white-space: nowrap;
+        /* Evita que el texto se ajuste a una nueva línea */
+        width: 0;
+        /* Inicialmente, el ancho es 0, así que no se ve texto */
+        animation: typing 4s steps(40, end) forwards;
+      }
+  
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+      }
+    </style>
+</head>
+<body>
+  <h1>Bienvenido al juego del Ping Pong!!</h1>
+  <br>
+  <p>Teclas del jugador 1: A, W, S, D </p>
+  <p>Teclas del juagodr 2: ⇦ , ⇨, ⇧, ⇩ </p>
+    <canvas id="miCanvas" height="600" width="600"></canvas>
+    <div class="controladores">
+        <button id="start">Start</button>
+    </div>
+    <!--- Importación de la lógica ---->
+    <script src="js/ball.js"></script>
+    <script src="js/drawing.js"></script>
+    <script src="js/paddle.js"></script>
+    <script src="js/pong.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    }
+
+    canvas{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+    }
+
+button{
+    background-color: #4CAF50;
+    align-items: center;
+    border-radius: 50px;
+    color: green;
+    justify-content: center;
+    background-color: rgb(19, 19, 19);
+}
+
+
+
+p{
+    align-items: center;
+    justify-content: center;
+    color: #4CAF50;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+
+
+h1{
+    align-items: center;
+    justify-content: center;
+    color: #4CAF50;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
